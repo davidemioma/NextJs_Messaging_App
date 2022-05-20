@@ -1,0 +1,23 @@
+.message {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  display: grid;
+}
+
+.sender .message {
+  margin-left: auto;
+  background-color: #dcf8c6;
+  text-align: right;
+}
+
+.reciever .message {
+  background-color: white;
+  text-align: left;
+}
+
+.timestamp {
+  font-size: 0.7rem;
+  text-align: right;
+}

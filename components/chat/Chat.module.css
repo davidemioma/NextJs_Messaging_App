@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.container:hover {
+  background-color: #e9eaeb;
+}
+
+.container p {
+  font-size: 0.8rem;
+  word-break: break-all;
+}

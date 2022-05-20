@@ -1,0 +1,82 @@
+.container {
+  position: relative;
+  background-color: whitesmoke;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header,
+.recipient_info,
+.input_container,
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.header,
+.input_container {
+  background-color: white;
+  position: sticky;
+  z-index: 10;
+  padding: 1rem;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.header {
+  top: 0;
+}
+
+.recipient_info {
+  flex: 1;
+  gap: 0.5rem;
+}
+
+.recipient_info p {
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.message_container {
+  padding: 1rem;
+  height: 90vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.message_container::-webkit-scrollbar {
+  display: none;
+}
+
+.input_container {
+  gap: 0.5rem;
+  bottom: 0;
+}
+
+.input_container input {
+  flex: 1;
+  padding: 10px;
+  background-color: whitesmoke;
+  border: none;
+  outline: none;
+}
+
+.end_of_message {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 430px) {
+  .icons {
+    display: none;
+  }
+
+  .recipient_info h3 {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .toggler {
+    display: none;
+  }
+}
